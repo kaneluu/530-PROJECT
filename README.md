@@ -2,5 +2,5 @@
 # Basic Components for Alarm System 
 Magnetic Contact Switch Sensor
 IR remote control
-Speaker 
+Speakersss
 LED lights/display
