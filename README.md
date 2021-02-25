@@ -25,10 +25,10 @@ Some apartments don’t come with a home alarm system; we will build one at a ch
       -  User should be able to turn the alarm off.
       -  Optionally, an email or message can be sent to you, if the alarm is tripped when they are not home.
 -  Possibly build a mount and display for the alarm system (if we have time).
-<<<<<<< HEAD
-### Testing
-=======
 
-# Nga Le
-# Joyce pham
->>>>>>> 2416b42256a02dcac18645e086b439778e54c4c8
+## Meet The Team:
+#### Nga Le
+#### Joyce pham
+#### Quyen Luu
+#### Robert Ortiz
+
