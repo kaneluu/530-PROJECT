@@ -18,6 +18,7 @@ uint32_t prev; // will store a 32bit unsinged int value
  * Code set up as usual
  * MAKE SURE TO PLACE SET UP CODE FOR ALL COMPONENTS HERE
  */
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600); // set up port
