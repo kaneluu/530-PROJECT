@@ -1,13 +1,12 @@
 #include <IRremote.h>
 
-const int IR_RECEIVE_PIN = 10;
-
 // EACH CONTROLLER MIGHT HAVE A DIFFERENT BUTTON LAYOUT
 // WE NEED TO INDIVIDUALLY CHECK WHAT BUTTON TO USE
-#define BTN_STAR 0XE916FF00
-#define BTN_POUND 0xF20DFF00
+#define BTN_ON 0XE916FF00
+#define BTN_OFF 0xF20DFF00
 
 // declare and init variables
+const int IR_RECEIVE_PIN = 10;
 const int LED_RED = 8; // USE a 100 ohm resistor
 bool alarmState = false; // for handling the code when the alarm is on
 long lastTime = millis(); // will help with keeping timing of our loops
@@ -52,6 +51,10 @@ void loop() {
  void  readFromIrRemote(){
   // if we receive some signal from the remote then we should handle that
   if(IrReceiver.decode()){
+
+    // UNCOMMENT LINE BELOW TO PRINT REMOTE VALUES TO CONSOLE
+    // Serial.println(IrReceiver.decodedIRData.decodedRawData,HEX);
+    
     // The remote by default will read zero so we should treat that as noise
     if(IrReceiver.decodedIRData.decodedRawData == 0xFFFFFFFF){
       IrReceiver.decodedIRData.decodedRawData = prev;
@@ -61,13 +64,13 @@ void loop() {
     // IN THE CASE WHERE THE ALARM IS DISSARMED,THEN  alarmState = 0
     switch(IrReceiver.decodedIRData.decodedRawData){
       // if the star button is pressed then turn the light on
-      case BTN_STAR:
+      case BTN_ON:
         Serial.println("Alarm Armed");
         alarmState = 1; // set state to on
         break;
 
       // if the pound button is pressed, then turn the light off
-      case BTN_POUND:
+      case BTN_OFF:
         Serial.println("Alarm Off");
         alarmState = 0; // set state to off
         break;
