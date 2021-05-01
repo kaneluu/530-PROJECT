@@ -1,5 +1,10 @@
 # 530-PROJECT - Home Alarm System
 
+
+### Getting Started
+* This application is written in C++ and runs best on Arduino IDE
+* To run this application, download the github repo and open the project in Arduino IDE. 
+
 ### Description
 Some apartments don’t come with a home alarm system; we will build one at a cheap cost. This home alarm system will protect you and your loved ones from intruders. We will use an IR controller to arm and disarm the alarm. When the alarm system is armed, then the system will actively be reading from the sensor. If the sensor is tripped, then the home alarm system will start blinking, and a loud siren will play sounds.  
 
