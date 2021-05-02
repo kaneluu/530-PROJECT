@@ -1,7 +1,7 @@
 const int buzzer = 4; 
 const int sensor = 2;
 
-int state; // 0 close - 1 open wwitch
+int state = 0; // 0 close - 1 open wwitch
 
 void setup()
 {
