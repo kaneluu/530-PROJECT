@@ -4,7 +4,8 @@
 ### Getting Started
 * This application is written in C++ and runs best on Arduino IDE
 * To run this application, download the github repo and open the alarm_system.ino in the alarm_system folder
-* Read the code comments and documentation to find the correct hardware configurations on the arduino and bread board.
+* Read the code comments and documentation to find the correct pin number and resistors for each componenet.
+* To see pictures of the component's circuits, go to the circuit_images folder or [click here](https://github.com/kaneluu/530-PROJECT/tree/main/circuit_images).
 * If you need to download the recent version of Arduino IDE you can find it [here](https://www.arduino.cc/en/software).
 
 
